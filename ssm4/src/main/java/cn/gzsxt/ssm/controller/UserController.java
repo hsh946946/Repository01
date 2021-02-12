@@ -32,6 +32,7 @@ public class UserController {
 		session.setAttribute("user", user);
 		System.out.println("用户对象"+user);
 		System.out.println("用户对象02"+user);
+		System.out.println("用户对象03"+user);
 		if(user!=null) {
 			return "forward:list.do";
 		}else {
