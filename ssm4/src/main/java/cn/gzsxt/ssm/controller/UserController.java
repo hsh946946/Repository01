@@ -31,6 +31,7 @@ public class UserController {
 		HttpSession session=request.getSession();
 		session.setAttribute("user", user);
 		System.out.println("用户对象"+user);
+		System.out.println("用户对象02"+user);
 		if(user!=null) {
 			return "forward:list.do";
 		}else {
