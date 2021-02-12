@@ -30,6 +30,7 @@ public class UserController {
 		User user=userService.selectUserByUsernameAndPassword(username, pwd);
 		HttpSession session=request.getSession();
 		session.setAttribute("user", user);
+		System.out.println("用户对象"+user);
 		if(user!=null) {
 			return "forward:list.do";
 		}else {
